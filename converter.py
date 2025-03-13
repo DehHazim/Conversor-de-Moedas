@@ -1,16 +1,6 @@
-def convert_currency(amount, rate):
-    return amount * rate
+valor = float(input('Digite um valor em reais: R$ '))
+dolar = valor / 5.81
+euro = valor / 6.51
+libra = valor / 7.51
 
-def main():
-    print("Bem-vindo ao Conversor de Moedas!")
-
-     rate = 0.18  # Exemplo: 1 BRL = 0.18 USD (você pode mudar para outras taxas)
-
-    amount = float(input("Digite um valor em reais (R$): "))
-    
-    converted_amount = convert_currency(amount, rate)
-    
-    print(f"R${amount:.2f} equivale a ${converted_amount:.2f} USD")
-
-if __name__ == "__main__":
-    main()
+print('o valor R${:.2f} corresponde aproximadamente a {:.2f} dólares, {:.2f} euros e {:.2f} libras esterlinas'.format(valor, dolar, euro, libra))
